@@ -43,6 +43,7 @@ const Mid = () => {
             <h1>Airport</h1>
             <input
               type="text"
+              placeholder="Enter Airport Name"
               onChange={(event) => setSearchAirport(event.target.value)}
             />
           </div>
@@ -71,8 +72,8 @@ const Mid = () => {
             Search
           </button>
         </div>
-        <div className="">
-          <div className="w-1/2">
+        <div className="relative">
+          <div className="w-4/12">
             {!show &&
               details
                 .filter((item) => {
@@ -96,7 +97,7 @@ const Mid = () => {
                   );
                 })}
 
-            <div className="absolute bottom">
+            <div className="absolute left-[33rem] top-0 ">
               {!show2 &&
                 details
                   .filter((item) => {
